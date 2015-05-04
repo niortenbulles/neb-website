@@ -38,6 +38,10 @@
 	border-color: @jaune;
 }
 
+body{
+	background: @noir;
+}
+
 
 //Page d'accueil
 
@@ -156,9 +160,15 @@ div.view-club-with-modal{
 	}
 }
 
-#edit-field-date-selection-value-wrapper{
+div.views-exposed-form{
 	label{
 		color: @blanc;
+	}
+
+	select.form-control:focus{
+		border-color: @jaune;
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px @jaune;
+
 	}
 }
 
