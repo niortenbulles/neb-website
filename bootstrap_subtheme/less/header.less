@@ -1,1 +1,49 @@
 // Insert your styling here.
+@import 'neb_variables.less';
+//colours
+
+@or : #e99e23;
+@argent : #a4abac;
+@bronze : #b87e54;
+@jaune : #ffcc31;
+@noir : #000;
+@blanc : #fff;
+
+@menu-default-color: @jaune;
+@menu-hover-and-active-color: darken(@jaune, 20%);
+
+#navbar{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: @jaune;
+	border: none;
+ 	color: @noir;
+
+	div.container{
+		div.navbar-header{
+
+		}
+
+		div.navbar-collapse{
+			nav{
+				ul.menu.navbar-nav{
+					li.leaf{
+						background-color: @menu-default-color;
+
+						a{
+							color: @noir;
+						}
+						a:focus, a:hover, a:active{
+							color: @noir;
+							background-color: @menu-hover-and-active-color;
+						}
+					}
+
+					li.leaf.active, li.leaf:hover{
+						background-color: @menu-hover-and-active-color;
+					}
+				}
+			}
+		}
+	}
+}
