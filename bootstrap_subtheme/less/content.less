@@ -31,6 +31,13 @@
 //fin----------------------
 
 
+//surcharge bootstrap
+.btn-neb{
+	color: @noir;
+	background-color: @jaune;
+	border-color: @jaune;
+}
+
 
 //Page d'accueil
 
@@ -92,6 +99,13 @@
 #block-views-selection-du-mois-block-1{
 	background: @blanc;
 	border: 3px solid @jaune;
+	margin-top: 5px;
+
+	h2.block-title{
+		font-size: 15px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
 
 	.view-selection-du-mois{
 
@@ -118,6 +132,8 @@
 
 div.view-club-with-modal{
 	div.field-content{
+		width: 200px;
+
 		.panel-default{
 			.panel(@jaune);
 
@@ -137,6 +153,12 @@ div.view-club-with-modal{
 		.Bronze{
 			.panel(@bronze);
 		}
+	}
+}
+
+#edit-field-date-selection-value-wrapper{
+	label{
+		color: @blanc;
 	}
 }
 
