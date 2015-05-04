@@ -42,6 +42,10 @@ body{
 	background: @noir;
 }
 
+a, a:hover{
+	color: @noir;
+}
+
 
 //Page d'accueil
 
@@ -172,6 +176,56 @@ div.views-exposed-form{
 	}
 }
 
+//vue other
+div.node-article{
+	background: @jaune;
+	padding-bottom: 5px;
+
+	div.field-name-title{
+		p{
+			margin: 10px 0px 5px 20px;
+		}
+	}
+
+	div.field-name-field-image{
+		a{
+			img{
+				margin: 10px auto 0px auto;
+			}
+		}
+	}
+
+	.field-name-body{
+		p{
+			text-align: justify;
+			margin-right: 10px;
+		}
+	}
+
+	.field-name-node-link{
+		.field-item{
+			text-align: right;
+			margin-right: 10px;
+		}
+	}
+}
+
+//block navigation
+
+#block-system-navigation{
+	background-color: @jaune;
+	margin: 10px 0;
+
+	ul{
+		li{
+			a:hover{
+				background-color: @jaune;
+				text-decoration: underline;
+			}
+		}
+	}
+
+}
 
 
 

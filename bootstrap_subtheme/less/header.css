@@ -2,12 +2,11 @@
 #navbar {
   margin-top: 0px;
   margin-bottom: 0px;
-  background-color: #ffcc31;
   border: none;
   color: #000000;
-}
-#navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf {
-  background-color: #ffcc31;
+  background-color: #000000;
+  background-image: url("dechirure.png");
+  background-size: contain;
 }
 #navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf a {
   color: #000000;
@@ -16,9 +15,9 @@
 #navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf a:hover,
 #navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf a:active {
   color: #000000;
-  background-color: #ca9800;
+  background: none;
 }
-#navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf.active,
-#navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf:hover {
-  background-color: #ca9800;
+#navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf.active a,
+#navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf:hover a {
+  background: none;
 }

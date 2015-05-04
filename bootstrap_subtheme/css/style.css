@@ -2,12 +2,11 @@
 #navbar {
   margin-top: 0px;
   margin-bottom: 0px;
-  background-color: #ffcc31;
-  border-color: #ffcc31;
+  border: none;
   color: #000000;
-}
-#navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf {
-  background-color: #ffcc31;
+  background-color: #000000;
+  background-image: url("dechirure.png");
+  background-size: contain;
 }
 #navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf a {
   color: #000000;
@@ -16,10 +15,11 @@
 #navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf a:hover,
 #navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf a:active {
   color: #000000;
+  background: none;
 }
-#navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf.active,
-#navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf:hover {
-  background-color: #ca9800;
+#navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf.active a,
+#navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf:hover a {
+  background: none;
 }
 
 
@@ -31,6 +31,10 @@
 }
 body {
   background: #000000;
+}
+a,
+a:hover {
+  color: #000000;
 }
 .jumbotron {
   padding: 0px !important;
@@ -144,3 +148,30 @@ div.views-exposed-form select.form-control:focus {
   border-color: #ffcc31;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px #ffcc31;
 }
+div.node-article {
+  background: #ffcc31;
+  padding-bottom: 5px;
+}
+div.node-article div.field-name-title p {
+  margin: 10px 0px 5px 20px;
+}
+div.node-article div.field-name-field-image a img {
+  margin: 10px auto 0px auto;
+}
+div.node-article .field-name-body p {
+  text-align: justify;
+  margin-right: 10px;
+}
+div.node-article .field-name-node-link .field-item {
+  text-align: right;
+  margin-right: 10px;
+}
+#block-system-navigation {
+  background-color: #ffcc31;
+  margin: 10px 0;
+}
+#block-system-navigation ul li a:hover {
+  background-color: #ffcc31;
+  text-decoration: underline;
+}
+

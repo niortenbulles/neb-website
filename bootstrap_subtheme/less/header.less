@@ -15,9 +15,11 @@
 #navbar{
 	margin-top: 0px;
 	margin-bottom: 0px;
-	background-color: @jaune;
 	border: none;
  	color: @noir;
+	background-color: @noir;
+	background-image:  url("dechirure.png");
+	background-size: contain;
 
 	div.container{
 		div.navbar-header{
@@ -28,19 +30,24 @@
 			nav{
 				ul.menu.navbar-nav{
 					li.leaf{
-						background-color: @menu-default-color;
+						//background-color: @menu-default-color;
 
 						a{
 							color: @noir;
 						}
 						a:focus, a:hover, a:active{
 							color: @noir;
-							background-color: @menu-hover-and-active-color;
+							//background-color: @menu-hover-and-active-color;
+							background: none;
 						}
 					}
 
 					li.leaf.active, li.leaf:hover{
-						background-color: @menu-hover-and-active-color;
+						//background-color: @menu-hover-and-active-color;
+						a{
+							//background-color: @menu-hover-and-active-color;
+							background: none;
+						}
 					}
 				}
 			}
