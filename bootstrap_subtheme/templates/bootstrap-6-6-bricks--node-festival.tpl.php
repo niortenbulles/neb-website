@@ -21,7 +21,7 @@
       <<?php print $topleft_wrapper; ?> class="col-md-4 <?php print $topleft_classes; ?>">
         <?php print $topleft; ?>
       </<?php print $topleft_wrapper; ?>>
-      <<?php print $topright_wrapper; ?> class="col-md-8 <?php print $topright_classes; ?>">
+      <<?php print $topright_wrapper; ?> class="col-md-7 col-md-offset-1 <?php print $topright_classes; ?>">
         <?php print $topright; ?>
       </<?php print $topright_wrapper; ?>>
     </div>
@@ -35,10 +35,10 @@
   <?php endif; ?>
   <?php if ($bottomleft || $bottomright) : ?>
     <div class="row">
-      <<?php print $bottomleft_wrapper; ?> class="col-md-6 <?php print $bottomleft_classes; ?>">
+      <<?php print $bottomleft_wrapper; ?> class="col-md-5 <?php print $bottomleft_classes; ?>">
         <?php print $bottomleft; ?>
       </<?php print $bottomleft_wrapper; ?>>
-      <<?php print $bottomright_wrapper; ?> class="col-md-6 <?php print $bottomright_classes; ?>">
+      <<?php print $bottomright_wrapper; ?> class="col-md-6 col-md-offset-1 <?php print $bottomright_classes; ?>">
         <?php print $bottomright; ?>
       </<?php print $bottomright_wrapper; ?>>
     </div>
