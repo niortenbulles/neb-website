@@ -8,6 +8,7 @@
 @jaune : #ffcc31;
 @noir : #000;
 @blanc : #fff;
+@gris : #555;
 
 //definition des classes abstraites
 .border-radius(@radius : 10px){
@@ -57,6 +58,46 @@ ul.tabs--primary{
 	}
 }
 
+//pagination
+.pagination{
+	li{
+		a{
+			color: @noir;
+			background-color: @jaune;
+			border-color: @jaune;
+		}
+
+		a:hover{
+			background-color: darken(@jaune, 10%);
+		}
+	}
+
+	li.active{
+		a{
+			color: @jaune;
+			background-color: @noir;
+			border-color: @jaune;
+		}
+
+		a:hover{
+			background-color: lighten(@noir, 10%);
+		}
+	}
+}
+
+//bouton
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+    color: @noir;
+    background-color: @jaune;
+    border-color: @gris;
+}
+
+.btn-info {
+    color: @gris;
+    background-color: @jaune;
+    border-color: @jaune;
+}
+
 
 //Page d'accueil
 
@@ -82,7 +123,7 @@ ul.tabs--primary{
 
 
 
-//view masonry
+//view frontapage masonry
 
 .view-frontpage{
 	padding-top: 15px;
@@ -294,6 +335,10 @@ div.block-festival{
 	background: @blanc;
 	margin-bottom: 10px;
 
+	.field-name-field-invites{
+		height: 500px;
+		overflow-y: scroll;
+	}
 }
 
 div.node-festival{

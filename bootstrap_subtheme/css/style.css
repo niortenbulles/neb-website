@@ -44,6 +44,36 @@ ul.tabs--primary li > a {
   border-style: solid;
   border-color: #DDD #DDD transparent;
 }
+.pagination li a {
+  color: #000000;
+  background-color: #ffcc31;
+  border-color: #ffcc31;
+}
+.pagination li a:hover {
+  background-color: #fdbe00;
+}
+.pagination li.active a {
+  color: #ffcc31;
+  background-color: #000000;
+  border-color: #ffcc31;
+}
+.pagination li.active a:hover {
+  background-color: #1a1a1a;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  color: #000000;
+  background-color: #ffcc31;
+  border-color: #555555;
+}
+.btn-info {
+  color: #555555;
+  background-color: #ffcc31;
+  border-color: #ffcc31;
+}
 #block-views-diaporama-front-page-block {
   position: relative;
   top: -10px;
@@ -220,6 +250,10 @@ div.block-festival {
   border: 3px solid #ffcc31;
   background: #ffffff;
   margin-bottom: 10px;
+}
+div.block-festival .field-name-field-invites {
+  height: 500px;
+  overflow-y: scroll;
 }
 div.node-festival div.panel-default {
   margin: 10px !important;

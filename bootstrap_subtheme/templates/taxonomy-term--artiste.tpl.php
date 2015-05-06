@@ -52,7 +52,7 @@
 <div id="collapse-<?php print $tid; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-<?php print $tid; ?>">
 	<div class="panel-body row">
 		<div class="col-md-4 col-sm-4 col-xs-4">
-			<img src="<?php print image_style_url('thumbnail', $field_photographie[0]['uri']); ?>" class="img-thumbnail"/>
+			<img src="<?php print image_style_url('accroche_acceuil', $field_photographie[0]['uri']); ?>" class="img-thumbnail"/>
 		</div>
 		<div class="col-md-8 col-sm-8 col-xs-8">
 			<p class="text-justify">

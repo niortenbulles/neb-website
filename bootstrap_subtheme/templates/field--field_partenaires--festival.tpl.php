@@ -57,7 +57,7 @@ HTML comment.
 	<?php endif; ?>
 
 	<?php foreach ($items as $delta => $item): ?>
-		<div class="col-md-2 item text-center">
+		<div class="col-md-2 col-sm-2 col-xs-2 item text-center">
 			<?php print render($item); ?>
 		</div>
     	<?php endforeach; ?>
