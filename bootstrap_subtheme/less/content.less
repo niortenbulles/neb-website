@@ -5,7 +5,7 @@
 @or : #e99e23;
 @argent : #a4abac;
 @bronze : #b87e54;
-@jaune : #ffcc31;
+@jaune : #ffcd1e;
 @noir : #000;
 @blanc : #fff;
 @gris : #555;
@@ -123,7 +123,7 @@ ul.tabs--primary{
 
 
 
-//view frontapage masonry
+//view frontpage masonry
 
 .view-frontpage{
 	padding-top: 15px;
@@ -208,6 +208,10 @@ ul.tabs--primary{
 //vue club
 
 div.view-club-with-modal{
+	div.view-content{
+		margin: auto;
+	}
+
 	div.field-content{
 		width: 200px;
 
@@ -325,20 +329,12 @@ div.view-a2bulles{
 
 }
 
+//test vue a2bulles
+
+
 //page festival à 2 bulles
 .page-header{
 	color: @jaune;
-}
-
-div.block-festival{
-	border: 3px solid @jaune;
-	background: @blanc;
-	margin-bottom: 10px;
-
-	.field-name-field-invites{
-		height: 500px;
-		overflow-y: scroll;
-	}
 }
 
 div.node-festival{
@@ -361,6 +357,26 @@ div.node-festival{
 		border: 1px solid @noir;
 		padding: 5px;
 	}
+}
+
+.field-name-field-affiche img{
+	margin: auto;
+}
+
+.block-festival-top-right,
+.block-festival-center,
+.block-festival-bottom-left,
+.block-festival-bottom-right{
+	border: 3px solid @jaune;
+	background: @blanc;
+	margin-bottom: 10px;
+}
+
+
+
+div.field-name-field-invites{
+	height: 500px;
+	overflow-y: scroll;
 }
 
 

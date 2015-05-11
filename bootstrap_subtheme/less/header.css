@@ -5,8 +5,10 @@
   border: none;
   color: #000000;
   background-color: transparent;
-  background-image: url("dechirure.png");
+  background-image: url("dechirure.png"), linear-gradient(to top, transparent, #ffcc31 20%);
   background-size: contain;
+  background-repeat: repeat-x;
+  background-position: bottom;
   z-index: 10;
 }
 #navbar div.container div.navbar-collapse nav ul.menu.navbar-nav li.leaf a {

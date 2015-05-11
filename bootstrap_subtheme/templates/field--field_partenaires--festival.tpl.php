@@ -51,16 +51,15 @@ After copying this file to your theme's folder and customizing it, remove this
 HTML comment.
 -->
 
-<div class="row partner-grid">
+<div class="partner-grid">
 	<?php if (!$label_hidden): ?>
-	<div class="col-md-12 field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
+		<div class="col-md-12 field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
 	<?php endif; ?>
-
 	<?php foreach ($items as $delta => $item): ?>
-		<div class="col-md-2 col-sm-2 col-xs-2 item text-center">
+		<div style="float: left">
 			<?php print render($item); ?>
 		</div>
-    	<?php endforeach; ?>
+	<?php endforeach; ?>
 </div>
 
 
