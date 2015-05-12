@@ -4,8 +4,8 @@
   margin-bottom: 0px;
   border: none;
   color: #000000;
-  background-color: transparent;
-  background-image: url("dechirure.png"), linear-gradient(to top, transparent, #ffcc31 20%);
+  background-color: #ffcd1e;
+  background-image: url("dechirure-noire_jaune.png");
   background-size: contain;
   background-repeat: repeat-x;
   background-position: bottom;
@@ -90,6 +90,11 @@ ul.tabs--primary li > a {
   margin: auto;
   padding-bottom: 70px;
 }
+.views-field-field-legende-diaporama p {
+  color: white;
+  background: linear-gradient(to left, transparent, #555555, transparent);
+  margin-bottom: 10px;
+}
 .view-frontpage {
   padding-top: 15px;
   background-image: url("dechirure-noir.png");
@@ -98,6 +103,19 @@ ul.tabs--primary li > a {
   position: relative;
   top: -20px;
   background-position: 0px -5px;
+}
+.view-frontpage a,
+.view-frontpage a:hover,
+.view-frontpage a:focus,
+.view-frontpage a:active,
+.view-frontpage p,
+.view-frontpage h1,
+.view-frontpage h2,
+.view-frontpage h3,
+.view-frontpage h4,
+.view-frontpage h5,
+.view-frontpage h6 {
+  color: #333333;
 }
 .view-frontpage .view-content {
   margin: auto;
@@ -110,23 +128,28 @@ ul.tabs--primary li > a {
   padding: 5px;
   text-align: justify;
 }
-.view-frontpage .masonry-item .node-bd {
-  cursor: pointer;
-}
-.view-frontpage .masonry-item h2 {
-  margin-top: 0px;
-}
 .view-frontpage .masonry-item img {
   margin: auto;
   margin-bottom: 5px;
 }
-.view-frontpage .masonry-item ul.links,
-.view-frontpage .masonry-item span.readmore {
+.view-frontpage .masonry-item ul.links {
   margin-top: 5px;
   text-align: right;
 }
-.view-frontpage a {
-  color: #000000;
+.view-frontpage .masonry-item h3.field-content.node-title {
+  padding-left: 5px;
+  letter-spacing: -1px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.view-frontpage .masonry-item div.date-selection {
+  padding-left: 5px;
+}
+.view-frontpage .masonry-item div.views-field-field-synopsis {
+  padding: 0px 5px;
+}
+.view-frontpage .masonry-item div.views-field-field-synopsis p {
+  text-align: justify;
 }
 /*vus selection du mois*/
 #block-views-selection-du-mois-block-1 {
@@ -273,13 +296,41 @@ div.node-festival div.panel-default {
 }
 .block-festival-top-right,
 .block-festival-center,
-.block-festival-bottom-left,
-.block-festival-bottom-right {
+.block-festival-bottom-left {
   border: 3px solid #ffcd1e;
   background: #ffffff;
   margin-bottom: 10px;
+}
+div.geolocation-map {
+  border: 3px solid #ffcd1e;
+  margin: 0px;
 }
 div.field-name-field-invites {
   height: 500px;
   overflow-y: scroll;
 }
+div.field-name-field-invites div.field-label {
+  padding: 5px 0px 0px 10px;
+}
+div.partner-grid div.field-label {
+  padding: 5px 0px 5px 5px;
+}
+div.partner-grid div.partner-logo {
+  float: left;
+}
+div.node-article.view-mode-full div.field {
+  margin-top: 15px;
+}
+div.node-article.view-mode-full div.field-name-field-image img {
+  margin: auto;
+}
+div.profile {
+  background: #ffcd1e;
+  margin: 10px 0px 10px 0;
+  padding-left: 15px;
+}
+#block-views-chroniques-par-user-block {
+  background: #ffcd1e;
+  padding-left: 15px;
+}
+

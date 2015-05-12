@@ -9,6 +9,7 @@
 @noir : #000;
 @blanc : #fff;
 @gris : #555;
+@gris-fonce : #333;
 
 //definition des classes abstraites
 .border-radius(@radius : 10px){
@@ -118,10 +119,14 @@ ul.tabs--primary{
 	padding-bottom: 70px;
 }
 
+.views-field-field-legende-diaporama p {
+    color: white;
+    background: linear-gradient(to left, transparent, @gris, transparent);
+    margin-bottom: 10px;
+}
+
+
 //content
-
-
-
 
 //view frontpage masonry
 
@@ -135,6 +140,10 @@ ul.tabs--primary{
 	top: -20px;
 	background-position: 0px -5px;
 
+	a, a:hover, a:focus, a:active, p, h1, h2, h3, h4, h5, h6{
+		color: @gris-fonce;
+	}
+
 	.view-content{
 		margin: auto;
 	}
@@ -147,28 +156,36 @@ ul.tabs--primary{
 		padding: 5px;
 		text-align: justify;
 
-		.node-bd{
-			cursor: pointer;
-		}
-
-		h2{
-			margin-top: 0px;
-		}
-
 		img{
 			margin: auto;
 			margin-bottom: 5px;
 		}
 
-		ul.links, span.readmore{
+		ul.links{
 			margin-top: 5px;
 			text-align: right;
 		}
+
+		h3.field-content.node-title {
+			padding-left: 5px;
+			letter-spacing: -1px;
+			text-align: left;
+			text-transform: capitalize;
+		}
+
+		div.date-selection{
+			padding-left: 5px;
+		}
+
+		div.views-field-field-synopsis{
+			padding: 0px 5px;
+
+			p{
+				text-align: justify;
+			}
+		}
 	}
 
-	a{
-		color: @noir;
-	}
 }
 
 /*vus selection du mois*/
@@ -329,8 +346,6 @@ div.view-a2bulles{
 
 }
 
-//test vue a2bulles
-
 
 //page festival à 2 bulles
 .page-header{
@@ -365,11 +380,15 @@ div.node-festival{
 
 .block-festival-top-right,
 .block-festival-center,
-.block-festival-bottom-left,
-.block-festival-bottom-right{
+.block-festival-bottom-left{
 	border: 3px solid @jaune;
 	background: @blanc;
 	margin-bottom: 10px;
+}
+
+div.geolocation-map{
+	border: 3px solid @jaune;
+	margin: 0px;
 }
 
 
@@ -377,11 +396,48 @@ div.node-festival{
 div.field-name-field-invites{
 	height: 500px;
 	overflow-y: scroll;
+
+	div.field-label{
+		padding: 5px 0px 0px 10px;
+	}
 }
 
+div.partner-grid{
+	div.field-label{
+		padding: 5px 0px 5px 5px;
+	}
 
+	div.partner-logo{
+		float: left;
+	}
+}
 
+//page article
 
+div.node-article.view-mode-full{
+	div.field{
+		margin-top: 15px;
+	}
+	div.field-name-field-image{
+		img{
+			margin: auto;
+		}
+	}
+}
+
+//page "mon compte"
+
+div.profile{
+	background: @jaune;
+	margin: 10px 0px 10px 0;
+	padding-left: 15px;
+
+}
+
+#block-views-chroniques-par-user-block{
+	background: @jaune;
+	padding-left: 15px;
+}
 
 
 

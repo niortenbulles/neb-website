@@ -56,7 +56,7 @@ HTML comment.
 		<div class="col-md-12 field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
 	<?php endif; ?>
 	<?php foreach ($items as $delta => $item): ?>
-		<div style="float: left">
+		<div class="partner-logo">
 			<?php print render($item); ?>
 		</div>
 	<?php endforeach; ?>

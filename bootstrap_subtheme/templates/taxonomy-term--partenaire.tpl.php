@@ -50,4 +50,4 @@
 </div>
 */?>
 
-<img src="<?php print image_style_url('logo_partenaire', $field_logo[0]['uri']); ?>" alt="<?php print $term_name; ?>" classe="img-responsive">
+<img src="<?php print image_style_url('logo_partenaire', $field_logo[0]['uri']); ?>" alt="<?php print $term_name;?>" title="<?php print $term_name;?>" classe="img-responsive">
