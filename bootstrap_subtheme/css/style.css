@@ -141,6 +141,7 @@ ul.tabs--primary li > a {
   letter-spacing: -1px;
   text-align: left;
   text-transform: capitalize;
+  margin-top: 0px;
 }
 .view-frontpage .masonry-item div.date-selection {
   padding-left: 5px;
